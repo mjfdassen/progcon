@@ -18,7 +18,7 @@
                   Name="lineInRectangle" Visibility="Hidden"/>
             <!-- Again, a rectangle -->
             <Rectangle Width="100" Height="50"
-                       Margin="10,80,0,0" Stroke="Black"
+                       Margin="10,81,0,0" Stroke="Black"
                        Name="lowerRectangle" Visibility="Hidden"/>
             <!-- Two Ellipses -->
             <Ellipse Width="100" Height="50"

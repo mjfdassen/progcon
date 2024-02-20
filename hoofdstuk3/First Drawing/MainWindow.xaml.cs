@@ -26,9 +26,10 @@ namespace First_Drawing
             Rectangle lowerRectangle = new Rectangle();
             lowerRectangle.Width = 100;
             lowerRectangle.Height = 100;
-            lowerRectangle.Margin = new Thickness(10, 75, 0, 0);
+            lowerRectangle.Margin = new Thickness(15, 15, 0, 0);
             lowerRectangle.Stroke = new SolidColorBrush(Colors.Black);
             paperCanvas.Children.Add(lowerRectangle);
+            //paperCanvas.Children.Clear();
         }
     }
 }

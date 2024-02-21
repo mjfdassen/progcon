@@ -10,6 +10,7 @@
                 Margin="105,27,0,0" VerticalAlignment="Top"
                 Name="paperCanvas" Background="LightGray">
         </Canvas>
+        <Canvas/>
 
     </Grid>
 </Window>

@@ -35,7 +35,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Triangle", "hoofdstuk3\Tria
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "mjfdassen", "mjfdassen", "{E44C3C08-4FC0-4379-8B3E-73023652D3F2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "guitests", "guitests\guitests.csproj", "{C76466B9-8A87-41B0-B3BA-66721673B378}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "guitests", "guitests\guitests.csproj", "{C76466B9-8A87-41B0-B3BA-66721673B378}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

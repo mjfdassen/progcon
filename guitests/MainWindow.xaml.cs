@@ -20,5 +20,15 @@ namespace guitests
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            lblTest.Content = "Eindtekst";
+        }
+
+        private void Toeter(object sender, RoutedEventArgs e)
+        {
+            lblTest.Content = "Eindtekst";
+        }
     }
 }

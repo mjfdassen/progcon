@@ -27,8 +27,8 @@ namespace Some_Shapes
             paperCanvas.Children.Add(upperLeftRectangle);
 
             Line lineInRectangle = new Line();
-            lineInRectangle.X1 = 10; lineInRectangle.Y1 = 10;
-            lineInRectangle.X2 = 110; lineInRectangle.Y2 = 60;
+            lineInRectangle.X1 = upperLeftRectangle.Margin.Left; lineInRectangle.Y1 = upperLeftRectangle.Margin.Top;
+            lineInRectangle.X2 = upperLeftRectangle.Margin.Left + upperLeftRectangle.Width; lineInRectangle.Y2 = upperLeftRectangle.Margin.Top + upperLeftRectangle.Height;
             lineInRectangle.Stroke = new SolidColorBrush(Colors.Black);
             paperCanvas.Children.Add(lineInRectangle);
 
@@ -65,6 +65,19 @@ namespace Some_Shapes
             rightImage.Width = 150;
             rightImage.Height = 150;
             paperCanvas.Children.Add(rightImage);
+
+            BitmapImage zelftoegevoegdBitmapImage = new BitmapImage();
+            zelftoegevoegdBitmapImage.BeginInit();
+            zelftoegevoegdBitmapImage.UriSource = new Uri("testimage.jpg", UriKind.Relative); //uniform resource identifier
+            zelftoegevoegdBitmapImage.EndInit();
+            Image leftImage = new Image();
+            leftImage.Source = zelftoegevoegdBitmapImage;
+            leftImage.Margin = new Thickness(120, 170, 0, 0);
+            leftImage.Width = 150;
+            leftImage.Height = 150;
+            paperCanvas.Children.Add(leftImage);
+
+            System.Diagnostics.Debug.WriteLine("test");
         }
     }
 }

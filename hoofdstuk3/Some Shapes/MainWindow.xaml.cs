@@ -28,7 +28,7 @@ namespace Some_Shapes
 
             Line lineInRectangle = new Line();
             lineInRectangle.X1 = 10; lineInRectangle.Y1 = 10;
-            lineInRectangle.X2 = 110; lineInRectangle.Y2 = 60;
+            lineInRectangle.X2 = 110; lineInRectangle.Y2 = upperLeftRectangle.Height + upperLeftRectangle.Margin.Top;
             lineInRectangle.Stroke = new SolidColorBrush(Colors.Black);
             paperCanvas.Children.Add(lineInRectangle);
 

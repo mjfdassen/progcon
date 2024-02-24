@@ -3,7 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="First Hello aangepast" Height="180" Width="300" >
     <Grid>
-        <Label Content="Hello XAML aangepast" HorizontalAlignment="Left"
-               Margin="95,60,0,0" VerticalAlignment="Top" Background="Red"/>
+        <Label Content="LesTest" HorizontalAlignment="Left"
+               Margin="95,60,0,0" VerticalAlignment="Top" Background="#FFFF2700"/>
     </Grid>
 </Window>

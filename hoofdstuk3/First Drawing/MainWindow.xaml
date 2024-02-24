@@ -8,10 +8,12 @@
         Name="drawButton" Click="drawButton_Click"/>
         <Canvas HorizontalAlignment="Left" 
                 Height="155" 
-                Width="127" 
-                VerticalAlignment="Top"
+                Width="128" 
+                VerticalAlignment="Center"
                 Name="paperCanvas" 
-                Background="LightGray" Margin="96,67,0,0"/>
-        <Canvas Grid.RowSpan="2"/>
+                Background="LightGray" Margin="65,0,0,0"/>
+        <Canvas Grid.RowSpan="2">
+            <Button Content="Clear" Canvas.Left="149" Canvas.Top="41" Click="Button_Click"/>
+        </Canvas>
     </Grid>
 </Window>

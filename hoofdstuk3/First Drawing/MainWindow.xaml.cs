@@ -29,7 +29,12 @@ namespace First_Drawing
             lowerRectangle.Margin = new Thickness(15, 15, 0, 0);
             lowerRectangle.Stroke = new SolidColorBrush(Colors.Black);
             paperCanvas.Children.Add(lowerRectangle);
-            //paperCanvas.Children.Clear();
+            
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            paperCanvas.Children.Clear();
         }
     }
 }

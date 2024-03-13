@@ -1,4 +1,5 @@
-﻿using System.Windows;
+﻿using System.Diagnostics.PerformanceData;
+using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
 using System.Windows.Shapes;
@@ -26,7 +27,8 @@ namespace BalloonWithProperties
             }
             set
             {
-                _x = value;
+                if (value > 0) _x = value;
+                else MessageBox.Show("Waarde negatief, graag een positieve waarde opgeven");
                 UpdateEllipse();
             }
         }

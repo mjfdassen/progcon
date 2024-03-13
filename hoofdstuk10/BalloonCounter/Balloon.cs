@@ -8,7 +8,7 @@ namespace BalloonCounter
     public class Balloon
     {
         private static int _count = 0;
-        
+        public int MyProperty { get; private set; }
         private int _x;
         private int _y;
         private int _diameter;

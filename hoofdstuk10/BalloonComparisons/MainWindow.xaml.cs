@@ -9,7 +9,9 @@ namespace BalloonComparisons
     {
         private Balloon _balloon1;
         private Balloon _balloon2;
-        
+        private Balloon _balloon3;
+        private Balloon _balloon4;
+
         public MainWindow()
         {
             InitializeComponent();
@@ -19,24 +21,31 @@ namespace BalloonComparisons
         {
             _balloon1 = new Balloon();
             _balloon1.DisplayOn(drawingCanvas);
+            _balloon3 = _balloon1;
+            _balloon4 = _balloon1;
+
+
+
         }
 
         private void balloon2Button_Click(object sender, RoutedEventArgs e)
         {
             //_balloon2 = new Balloon();
             //_balloon2.DisplayOn(drawingCanvas);
-            _balloon2 = _balloon1;
+            //_balloon2 = _balloon1;
+            _balloon2 = new Balloon();
+            _balloon2.DisplayOn(drawingCanvas);
         }
 
         private void compareButton_Click(object sender, RoutedEventArgs e)
         {
-            if (_balloon1.Equals(_balloon2))
+            if (_balloon1.Equals(_balloon4) && _balloon3.Equals(_balloon1) && _balloon3.Equals(_balloon4))
             {
-                compareTexBlock.Text = "These balloons are equal!";
+                compareTexBlock.Text = "Alle 3 de ballonnen zijn dezelfde";
             }
             else
             {
-                compareTexBlock.Text = "These balloons are not equal!";
+                compareTexBlock.Text = "Alle 3 de ballonnen zijn niet dezelfde!";
             }
             balloon1TexBlock.Text = _balloon1.ToString();
             //balloon1TexBlock.Text = _balloon1.GetType().ToString();

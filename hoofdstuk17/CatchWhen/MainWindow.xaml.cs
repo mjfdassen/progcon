@@ -1,4 +1,5 @@
-﻿using System.Windows;
+﻿using System;
+using System.Windows;
 
 namespace CatchWhen
 {
@@ -55,7 +56,7 @@ namespace CatchWhen
         private void CheckAddress(string email)
         {
             // dummy code to simulate checks
-            var ex = new InvalidEmailException($"{email} does not contain @-sign");
+            InvalidEmailException ex = new InvalidEmailException($"{email} does not contain @-sign");
             ex.Severity = 10;
             throw ex;
         }
